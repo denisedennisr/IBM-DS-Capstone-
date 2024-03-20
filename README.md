@@ -70,14 +70,14 @@ The research attempts to identify the factors for a successful rocket landing. T
 * Scatter chart showing Payload Mass vs. Success Rate by Booster Version
 
 ## Predictive Analytics
-* **Create** NumPy array from the Class column
-* **Standardize** the data with StandardScaler. Fit and transform the data.
-* **Split** the data using train_test_split
-* **Create** a GridSearchCV object with cv=10 for parameter optimization
-* **Apply** GridSearchCV on different algorithms: logistic regression (LogisticRegression()), support vector machine (SVC()), decision tree (DecisionTreeClassifier()), K-Nearest Neighbor (KNeighborsClassifier())
-* **Calculate** accuracy on the test data using .score() for all models
-* **Assess** the confusion matrix for all models
-* **Identify** the best model using Jaccard_Score, F1_Score and Accuracy
+* Create NumPy array from the Class column
+* Fit and  transform features with StandardScaler. 
+* Split Label Column class from Dataset
+* Create a GridSearchCV object with cv=10 for parameter optimization
+* Apply GridSearchCV on different algorithms: logistic regression (LogisticRegression()), support vector machine (SVC()), decision tree (DecisionTreeClassifier()), K-Nearest Neighbor (KNeighborsClassifier())
+* Calculate accuracy on the test data using .score() for all models
+* Assess the confusion matrix for all models
+* Identify the best model using Jaccard_Score, F1_Score and Accuracy
 
 # Conclusion
 * The model performed similarly on test set with the decision tree model slightly outperforming 
@@ -86,12 +86,12 @@ The research attempts to identify the factors for a successful rocket landing. T
 * Across all launch sites, the higher the payload mass the higher the success rate
 * The Decision Tree model is the best in terms of prediction accuracy for this dataset.
 * Expanding the dataset size will contribute to enhancing the analysis outcomes, enabling a deeper exploration to ascertain the potential generalizability of the findings to a broader dataset.
-![image](https://github.com/denisedennisr/IBM-DS-Capstone-/assets/145600391/d45e331b-1277-480c-8165-367d8cb93edd)
+
 
 
 ## Additional Things to Consider
-* **Dataset:** A larger dataset will help build on the predictive analytics results to help understand if the findings can be generalizable to a larger data set
-* **Feature Analysis / PCA:** Additional feature analysis or principal component analysis should be conducted to see if it can help improve accuracy
-* **XGBoost:** Is a powerful model which was not utilized in this study. It would be interesting to see if it outperforms the other classification models
+* A larger dataset will help build on the predictive analytics results to help understand if the findings can be generalizable to a larger data set
+* Additional feature analysis or principal component analysis should be conducted to see if it can help improve accuracy
+* XGBoost Is a powerful model which was not utilized in this study. It would be interesting to see if it outperforms the other classification models
 
 
